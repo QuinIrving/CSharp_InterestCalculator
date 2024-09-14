@@ -1,0 +1,26 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="Interest Calculation Client" Height="450" Width="800" MinHeight="435" MinWidth="414">
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+
+        <ListBox Height="150" x:Name="intBox" VerticalAlignment="Top" HorizontalAlignment="Stretch" Background="AliceBlue" Margin="10" Foreground="Blue">
+            <Label Background="White" BorderBrush="Black" BorderThickness="1" >Interest Information</Label>
+
+        </ListBox>
+        
+        <StackPanel Height="150" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Stretch" Background="AliceBlue" Margin="10, 160, 10, 0">
+            <StackPanel Height="150" Width="250" x:Name="intHeader" Background="LightGreen">
+                
+            </StackPanel>
+            <StackPanel Width="154" x:Name="intValue" Background="Pink">
+                
+            </StackPanel>
+        </StackPanel>
+        <Button Click="Button_Click" VerticalAlignment="Bottom" HorizontalAlignment="Stretch">Retrieve Information</Button>
+    </Grid>
+</Window>

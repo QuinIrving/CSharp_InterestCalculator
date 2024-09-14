@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:62737/InterestCalculations.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/InterestCalculator" />
+  <xs:element name="SimpleInterest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_principal" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_rate" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_time" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimpleInterestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimpleInterestResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimplePlusPrincipalInterest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_principal" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_rate" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_time" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SimplePlusPrincipalInterestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SimplePlusPrincipalInterestResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompoundInterest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_principal" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_rate" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_time" type="xs:float" />
+        <xs:element minOccurs="0" name="_n" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompoundInterestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CompoundInterestResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PeriodicCompoundInterest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_principal" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_rate" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_time" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PeriodicCompoundInterestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PeriodicCompoundInterestResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalculateAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_principal" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_rate" type="xs:decimal" />
+        <xs:element minOccurs="0" name="_time" type="xs:float" />
+        <xs:element minOccurs="0" name="_n" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalculateAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/InterestCalculator" minOccurs="0" name="CalculateAllResult" nillable="true" type="q1:AllInterest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

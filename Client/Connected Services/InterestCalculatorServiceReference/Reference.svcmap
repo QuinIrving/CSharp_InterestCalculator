@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8bcad799-a78c-4a09-bc1f-c708365e0399" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:62737/InterestCalculations.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InterestCalculations.wsdl" MetadataType="Wsdl" ID="728df3a0-b57f-4639-91b6-71d2be569ed5" SourceId="1" SourceUrl="http://localhost:62737/InterestCalculations.svc?wsdl" />
+    <MetadataFile FileName="InterestCalculations1.xsd" MetadataType="Schema" ID="3c775c15-06c7-43cf-81bc-496b6b79dcf6" SourceId="1" SourceUrl="http://localhost:62737/InterestCalculations.svc?xsd=xsd1" />
+    <MetadataFile FileName="InterestCalculations.xsd" MetadataType="Schema" ID="74818143-f213-424e-8abe-a0e0a8c1e345" SourceId="1" SourceUrl="http://localhost:62737/InterestCalculations.svc?xsd=xsd0" />
+    <MetadataFile FileName="InterestCalculations2.xsd" MetadataType="Schema" ID="addaf251-ed95-4644-b0af-de8580cf43f8" SourceId="1" SourceUrl="http://localhost:62737/InterestCalculations.svc?xsd=xsd2" />
+    <MetadataFile FileName="InterestCalculations.disco" MetadataType="Disco" ID="24e00b13-7c01-4d7b-8c3b-0a8dddc1fb36" SourceId="1" SourceUrl="http://localhost:62737/InterestCalculations.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
